@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import pic from "/vite.svg"
 import {
   FaCut,
   FaUser,
@@ -12,6 +13,8 @@ import {
   FaHandHoldingHeart,
   FaBox,
 } from 'react-icons/fa';
+import Pic from '../components/Pic';
+import Card from '../components/Card';
 
 const MainMenu = () => {
   const services = [
@@ -28,7 +31,7 @@ const MainMenu = () => {
   ];
 
   const links = [
-    "#hair-cut",
+    "/hair-cut",
     "#shaving",
     "#hair-color-fashion",
     "#fair-polish",
@@ -74,6 +77,12 @@ const MainMenu = () => {
             </Link>
           </div>
         ))}
+      </div>
+      <Pic />
+      <div className="flex justify-between ">
+      <Card showButton='true' title='ura dhura chul cutting ' price={'100$'} className={'hi'}/>
+      <Card showButton='true' title='ura dhura chul cutting ' price={'100$'}/>
+      <Card showButton='true' title='ura dhura chul cutting ' price={'100$'}/>
       </div>
     </div>
   );

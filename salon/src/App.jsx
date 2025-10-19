@@ -8,11 +8,13 @@ import {
 import MainMenu from './pages/MainMenu';
 import Root from './pages/Root';
 import Invoice from './pages/Invoice';
+import HairCut from './pages/HairCut';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root/>}>
       <Route index element={<MainMenu/>} />
+      <Route path='/hair-cut' element={<HairCut/>} />
       <Route path='/invoice' element={<Invoice/>} />
     </Route>
   )
